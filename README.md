@@ -23,7 +23,14 @@ The site highlights school information, academics, events, and provides contact 
 - **Deployment**: Vercel
 
 ---
+## Screenshots
+### Home Page
+![Home](public/images/hero.jpg)
 
+### Contact Page
+![Contact](public/images/contact.jpg)
+
+---
 ## Getting Started (Local)
 ```bash
 # Install dependencies
@@ -31,3 +38,5 @@ npm install
 
 # Run the development server
 npm run dev
+
+
