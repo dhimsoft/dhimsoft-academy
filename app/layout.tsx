@@ -1,34 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "P.S. 111 | Adolph S. Ochs",
-  description:
-    "Official website for P.S. 111 - Nurturing young minds in the heart of Manhattan.",
-  keywords: [
-    "P.S. 111",
-    "Adolph S. Ochs",
-    "Elementary School",
-    "Manhattan School",
-    "NYC Education",
-  ],
-  openGraph: {
-    title: "P.S. 111 | Adolph S. Ochs",
-    description:
-      "Nurturing young minds in the heart of Manhattan. Explore academics, events, and contact information.",
-    url: "https://ps111-website.vercel.app",
-    siteName: "P.S. 111",
-    images: [
-      {
-        url: "/images/hero.jpg",
-        width: 1200,
-        height: 630,
-        alt: "P.S. 111 School",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+  title: "P.S. 111 Adolph S. Ochs",
+  description: "Official website for P.S. 111 Elementary School in Manhattan.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -42,9 +17,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Official website for P.S. 111 Elementary School in Manhattan."
+        />
+        <meta property="og:title" content="P.S. 111 Adolph S. Ochs" />
+        <meta
+          property="og:description"
+          content="Explore academics, events, and updates from P.S. 111 in Manhattan."
+        />
+        <meta property="og:image" content="/images/hero.jpg" />
       </head>
-      <body>{children}</body>
+      <body className="antialiased bg-gray-50">{children}</body>
     </html>
   );
 }
