@@ -1,5 +1,8 @@
 # P.S. 111 School Website
 
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fps111-website.vercel.app)](https://ps111-website.vercel.app)
+
+
 This is the official website for **P.S. 111 Adolph S. Ochs**, built using [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).  
 The site highlights school information, academics, events, and provides contact forms for families and the community.
 
