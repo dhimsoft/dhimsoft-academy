@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { Palette, Laptop, Music, Dumbbell, Languages } from "lucide-react";
+import { Palette, Laptop, Dumbbell, Languages } from "lucide-react";
 
 const programs = [
-  { icon: <Laptop className="text-blue-700" size={40} />, title: "STEM & Technology", desc: "Advanced programs in science and digital literacy." },
-  { icon: <Palette className="text-pink-500" size={40} />, title: "Arts & Music", desc: "Creative expression through visual arts and music." },
-  { icon: <Dumbbell className="text-green-500" size={40} />, title: "Physical Education", desc: "Healthy lifestyles through sports and fitness." },
-  { icon: <Languages className="text-yellow-500" size={40} />, title: "ESL Support", desc: "English as a Second Language programs for multilingual learners." }
+  { icon: <Laptop className="text-blue-700" size={40} aria-label="STEM & Technology" />, title: "STEM & Technology", desc: "Advanced programs in science and digital literacy." },
+  { icon: <Palette className="text-pink-500" size={40} aria-label="Arts & Music" />, title: "Arts & Music", desc: "Creative expression through visual arts and music." },
+  { icon: <Dumbbell className="text-green-500" size={40} aria-label="Physical Education" />, title: "Physical Education", desc: "Healthy lifestyles through sports and fitness." },
+  { icon: <Languages className="text-yellow-500" size={40} aria-label="ESL Support" />, title: "ESL Support", desc: "English as a Second Language programs for multilingual learners." }
 ];
 
 export default function Academics() {

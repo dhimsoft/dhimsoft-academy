@@ -1,9 +1,8 @@
 export default function NotFound() {
   return (
-    <div className="p-8 text-center">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">404</h1>
-      <p className="text-gray-600 mb-6">This page could not be found.</p>
-      <a href="/" className="text-blue-600 hover:underline">Go Home</a>
+    <div className="p-10 text-center">
+      <h2 className="text-2xl font-bold">Page Not Found</h2>
+      <a href="/" className="mt-4 text-blue-600 underline">Go Home</a>
     </div>
   );
 }

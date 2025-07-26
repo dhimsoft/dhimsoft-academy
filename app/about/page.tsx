@@ -14,6 +14,7 @@ export default function About() {
           width={1200}
           height={600}
           className="object-cover"
+          onError={(e) => { e.currentTarget.style.display = 'none'; }}
         />
       </div>
       <p className="text-gray-700">

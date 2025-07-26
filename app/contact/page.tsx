@@ -3,6 +3,11 @@
 import { Mail, User, Pencil } from "lucide-react";
 
 export default function Contact() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    // You can add form logic here
+  }
+
   return (
     <main className="relative h-screen w-full font-sans overflow-hidden">
       {/* Background Image */}
@@ -10,6 +15,7 @@ export default function Contact() {
         <img
           src="/images/contact.jpg"
           alt="P.S. 111 Campus"
+          aria-label="P.S. 111 Campus"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-blue-900/50 backdrop-blur-sm"></div>
@@ -49,7 +55,11 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 space-y-5 border border-gray-200">
+          <form
+            className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 space-y-5 border border-gray-200"
+            onSubmit={handleSubmit}
+            autoComplete="off"
+          >
             <h2 className="text-2xl font-bold text-blue-700 mb-4">
               Send Us a Note ✏️
             </h2>
@@ -61,6 +71,7 @@ export default function Contact() {
                 type="text"
                 placeholder="Your Name"
                 className="w-full pl-10 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 text-gray-900"
+                autoComplete="off"
               />
             </div>
 
@@ -71,6 +82,7 @@ export default function Contact() {
                 type="email"
                 placeholder="Your Email"
                 className="w-full pl-10 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 text-gray-900"
+                autoComplete="off"
               />
             </div>
 
@@ -81,6 +93,7 @@ export default function Contact() {
                 rows={4}
                 placeholder="Your Message"
                 className="w-full pl-10 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 text-gray-900"
+                autoComplete="off"
               ></textarea>
             </div>
 
