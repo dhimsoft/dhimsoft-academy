@@ -1,19 +1,20 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "P.S. 111 Adolph S. Ochs",
-  description: "Nurturing young minds in the heart of Manhattan.",
+export const metadata = {
+  title: "P.S. 111 Manhattan",
+  description: "Official school website",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="pt-20">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
