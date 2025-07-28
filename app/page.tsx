@@ -1,53 +1,66 @@
-"use client";
-
-import Image from "next/image";
-import Slider from "@/components/Slider";
-import { MapPin, School, Clock } from "lucide-react";
-
 export default function Home() {
   return (
-    <div>
+    <main>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center text-center w-full">
-        <Image
-          src="/images/hero.jpg"
-          alt="School Hero"
-          fill
-          sizes="100vw"
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-blue-900/50" />
-        <div className="relative z-10 text-white px-4">
-          <h1 className="text-4xl font-bold mb-4">Welcome to P.S. 111</h1>
-          <p className="text-lg">Nurturing young minds in the heart of Manhattan.</p>
-        </div>
+      <section className="relative bg-blue-700 text-white text-center py-32">
+        <h1 className="text-5xl font-bold mb-4">Welcome to PS 111 Adolph S. Ochs</h1>
+        <p className="text-xl max-w-2xl mx-auto">
+          Committed to Academic Excellence and Community Engagement
+        </p>
       </section>
 
-      {/* Quick Info */}
-      <section className="py-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 text-center">
-        <div className="p-6 bg-gray-100 rounded-lg shadow">
-          <MapPin className="mx-auto text-blue-700 mb-4" size={40} />
-          <h3 className="text-xl font-bold">Location</h3>
-          <p>440 West 53rd Street, Manhattan, NY</p>
-        </div>
-        <div className="p-6 bg-gray-100 rounded-lg shadow">
-          <School className="mx-auto text-blue-700 mb-4" size={40} />
-          <h3 className="text-xl font-bold">Grades</h3>
-          <p>Pre-K through 5th Grade</p>
-        </div>
-        <div className="p-6 bg-gray-100 rounded-lg shadow">
-          <Clock className="mx-auto text-blue-700 mb-4" size={40} />
-          <h3 className="text-xl font-bold">School Hours</h3>
-          <p>8:00 AM – 3:00 PM</p>
-        </div>
+      {/* Quick Links Section */}
+      <section className="py-16 max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+        {[
+          { title: "About Us", link: "/about" },
+          { title: "Academics", link: "/academics" },
+          { title: "Contact", link: "/contact" },
+          { title: "News & Events", link: "/news" },
+        ].map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h3 className="text-xl font-bold text-blue-700 mb-2">{item.title}</h3>
+            <p className="text-gray-600">Learn more about {item.title.toLowerCase()}.</p>
+          </a>
+        ))}
       </section>
 
-      {/* News Slider */}
-      <section className="py-12 max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-6 text-blue-800">Latest News & Events</h2>
-        <Slider />
+      {/* News Section */}
+      <section className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-blue-800 mb-8">
+            Latest News
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Library Renovation Complete",
+                date: "2025-07-20",
+                text: "Our library now features modern learning zones and digital resources.",
+              },
+              {
+                title: "Family Movie Night",
+                date: "2025-07-10",
+                text: "Join us for our annual family movie night under the stars!",
+              },
+              {
+                title: "New Gifted & Talented Program Launch",
+                date: "2025-06-15",
+                text: "Expanded G&T classes for grades 2-5 begin this fall.",
+              },
+            ].map((news, i) => (
+              <div key={i} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="text-xl font-bold text-blue-700">{news.title}</h3>
+                <p className="text-gray-500 text-sm mb-2">{news.date}</p>
+                <p className="text-gray-700">{news.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
-    </div>
+    </main>
   );
 }
