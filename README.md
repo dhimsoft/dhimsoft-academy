@@ -3,10 +3,10 @@
 🚀 **Live Demo:** [dhimsoft-academy.vercel.app](https://dhimsoft-academy.vercel.app)  
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdhimsoft-academy.vercel.app&style=flat-square)](https://dhimsoft-academy.vercel.app)  
-[![Vercel Deployment](https://img.shields.io/badge/Deployed-Vercel-brightgreen)](https://dhimsoft-academy.vercel.app)  
+[![Vercel Deployment](https://img.shields.io/badge/Deployed-Vercel-brightgreen?logo=vercel&logoColor=white)](https://dhimsoft-academy.vercel.app)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)  
-![Framework](https://img.shields.io/badge/Framework-Next.js-black)  
-![Styling](https://img.shields.io/badge/Styling-TailwindCSS-blue)  
+![Framework](https://img.shields.io/badge/Framework-Next.js-black?logo=nextdotjs)  
+![Styling](https://img.shields.io/badge/Styling-TailwindCSS-blue?logo=tailwindcss)  
 
 ---
 
