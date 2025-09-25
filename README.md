@@ -1,21 +1,31 @@
 # 🎓 Dhimsoft Academy Website  
 
+🚀 **Live Demo:** [dhimsoft-academy.vercel.app](https://dhimsoft-academy.vercel.app)  
+
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdhimsoft-academy.vercel.app&style=flat-square)](https://dhimsoft-academy.vercel.app)  
 [![Vercel Deployment](https://img.shields.io/badge/Deployed-Vercel-brightgreen)](https://dhimsoft-academy.vercel.app)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)  
 ![Framework](https://img.shields.io/badge/Framework-Next.js-black)  
-![Styling](https://img.shields.io/badge/Styling-TailwindCSS-blue)
+![Styling](https://img.shields.io/badge/Styling-TailwindCSS-blue)  
 
 ---
 
 ## 🚀 Overview  
+
 **Dhimsoft Academy** is a fully responsive **school website prototype** built with **Next.js** and **Tailwind CSS**.  
 
-It demonstrates how modern educational institutions can showcase **programs, admissions, resources, parent communication tools, and events** in a professional, accessible, and engaging way.  
+It demonstrates how modern educational institutions can showcase:  
+- **Programs**  
+- **Admissions**  
+- **Resources**  
+- **Parent communication tools**  
+- **Events**  
+
+… all in a professional, accessible, and engaging way.  
 
 This project is part of the **Dhimsoft portfolio** to:  
-- ✅ Showcase technical skills in full-stack development, UI/UX design, and deployment.  
-- ✅ Serve as a **demo product** that can be customized and sold to schools, academies, and training centers.  
+- ✅ Showcase technical skills in **full-stack development, UI/UX design, and deployment**.  
+- ✅ Serve as a **demo product** that can be customized and sold to **schools, academies, and training centers**.  
 
 ---
 
@@ -36,22 +46,22 @@ This project is part of the **Dhimsoft portfolio** to:
 ### 🌐 Website Pages  
 - **Home** — Hero section, quick links, news & events.  
 - **About Us** — Mission, vision, and history.  
-- **Programs** — Educational offerings with highlights.  
-- **Admissions** — Step-by-step enrollment guidance.  
-- **Parents** — Subsections: PTA, Parent Coordinator, Resources, Title I PAC, Attendance.  
-- **Resources** — Policies, forms & documents, guides/support.  
-- **Students** — Student life, clubs, and activities.  
-- **Calendar** — Upcoming events (interactive).  
-- **Contact** — Inquiry & contact form with validation + direct email.  
-- **Visit Us** — Google Maps embed + scheduling a visit.  
+- **Programs** — Elementary, middle, high school, summer programs.  
+- **Admissions** — Tuition, inquiry form, FAQs, schedule a visit.  
+- **Parents** — PTA, Parent Coordinator, resources, forms, policies, guides, Title I PAC, Attendance.  
+- **Resources** — School documents, handbooks, and policies.  
+- **Students** — Student life, clubs, arts, athletics, dorm, wellness.  
+- **Calendar** — Interactive events calendar.  
+- **Contact** — Inquiry form with validation and direct email.  
+- **Visit Us** — Google Maps embed with directions.  
 - **404 Page** — Custom error page with branding.  
 
 ### 🛡️ Design & Engineering  
-- **Responsive Layout** — Works seamlessly across devices.  
-- **Glassmorphism & Gradients** — Modern UI trend with depth.  
-- **Reusable Components** — Header, footer, hero sections, cards, grids.  
-- **Form Handling** — Inquiry & Contact forms with JSON API routes.  
-- **Optimized Performance** — Static assets stored in `/public/images`.  
+- **Responsive Layout** — Optimized for desktop, tablet, and mobile.  
+- **Glassmorphism & Gradients** — Modern UI trend with depth and clarity.  
+- **Reusable Components** — Header, footer, hero, cards, grids.  
+- **Form Handling** — Inquiry & contact via Next.js API routes.  
+- **Optimized Performance** — Images served from `/public/images`.  
 
 ---
 
@@ -64,25 +74,25 @@ This project is part of the **Dhimsoft portfolio** to:
 ![About Page](public/images/about.png)  
 
 ### Programs Page  
-![Programs](public/images/program.png)  
+![Programs Page](public/images/program.png)  
 
 ### Admissions Page  
-![Admissions](public/images/admissions.png)  
+![Admissions Page](public/images/admissions.png)  
 
 ### Parents Section  
-![Parents](public/images/parents.png)  
+![Parents Section](public/images/parents.png)  
 
 ### Resources Page  
-![Resources](public/images/resourses.png)  
+![Resources Page](public/images/resourses.png)  
 
 ### Students Page  
-![Students](public/images/students.png)  
+![Students Page](public/images/students.png)  
 
 ### Calendar Page  
-![Calendar](public/images/calendar.png)  
+![Calendar Page](public/images/calendar.png)  
 
 ### Contact Page  
-![Contact](public/images/contact.png)  
+![Contact Page](public/images/contact.png)  
 
 ---
 
@@ -90,28 +100,29 @@ This project is part of the **Dhimsoft portfolio** to:
 
 This project involved:  
 - Structuring a **multi-page Next.js app** with nested routes.  
-- Managing **form data submission** with API routes & JSON validation.  
-- Debugging **Google Maps integration** (`pb` parameter issue).  
-- Handling **404 fallbacks** for not-yet-implemented pages.  
-- Creating a **realistic prototype** without exposing sensitive data.  
+- Managing **form submissions** with API routes & JSON validation.  
+- Debugging **Google Maps embed integration** (`pb` parameter issue).  
+- Handling **custom 404 pages**.  
+- Delivering a **realistic prototype** without exposing sensitive data.  
 
 ---
 
 ## 💡 Future Enhancements  
 
 - 📊 **Database integration** (PostgreSQL / Supabase) for dynamic content.  
-- 🛠️ **Admin dashboard** for schools to manage announcements/events.  
-- 🔑 **Authentication system** for parents, teachers, students.  
+- 🛠️ **Admin dashboard** for schools to manage events, news, and announcements.  
+- 🔑 **Authentication system** for parents, teachers, and students.  
 - 🤖 **AI-powered chatbot** for answering parent inquiries.  
-- 📝 **CMS integration** (Sanity, Strapi) for easier content management.  
+- 📝 **CMS integration** (Sanity, Strapi, or Headless CMS) for content editing.  
+- 📱 **Mobile-optimized UI improvements** (progressive web app features).  
 
 ---
 
 ## 📂 Project Purpose  
 
 This is **not a real school**, but a **professional prototype**:  
-- 🎯 **For recruiters** → to evaluate technical depth, design ability, and deployment skills.  
-- 🎯 **For clients** → to preview a ready-to-customize school website product.  
+- 🎯 **For recruiters** → shows technical depth, design ability, and deployment skills.  
+- 🎯 **For clients** → a ready-to-customize school website product.  
 
 ---
 
@@ -129,7 +140,7 @@ This is **not a real school**, but a **professional prototype**:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/dhimsoft-academy.git
+git clone https://github.com/dhimsoft/dhimsoft-academy.git
 
 # Navigate into the folder
 cd dhimsoft-academy
