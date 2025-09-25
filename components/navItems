@@ -1,0 +1,7 @@
+const navItems = [
+  { href: "/programs", label: "Programs" },
+  { href: "/admissions", label: "Admissions" },
+  // { href: "/student-life", label: "Student Life" }, // not ready yet
+  // { href: "/parents", label: "Parents" },          // not ready yet
+  { href: "/contact", label: "Contact" },
+];
