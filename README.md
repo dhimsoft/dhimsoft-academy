@@ -15,11 +15,11 @@
 **Dhimsoft Academy** is a fully responsive **school website prototype** built with **Next.js** and **Tailwind CSS**.  
 
 It demonstrates how modern educational institutions can showcase:  
-- **Programs**  
-- **Admissions**  
-- **Resources**  
-- **Parent communication tools**  
-- **Events**  
+- 📘 Programs  
+- 📝 Admissions  
+- 📂 Resources  
+- 👨‍👩‍👧 Parent communication tools  
+- 📅 Events  
 
 … all in a professional, accessible, and engaging way.  
 
@@ -33,9 +33,9 @@ This project is part of the **Dhimsoft portfolio** to:
 
 - **Framework:** Next.js 15 (App Router)  
 - **Styling:** Tailwind CSS 4.0 (utility-first, responsive design)  
-- **Icons:** Lucide React (clean, scalable icons)  
+- **Icons:** Lucide React  
 - **Deployment:** Vercel (CI/CD, global edge network)  
-- **Forms:** API routes with form handling (Contact & Inquiry)  
+- **Forms:** Next.js API routes with validation (Contact & Inquiry)  
 - **Google Maps Integration:** Visit Us page  
 - **Version Control:** Git & GitHub  
 
@@ -150,6 +150,5 @@ npm install
 
 # Run development server
 npm run dev
-
 
 © 2025 Dhimsoft Academy (Prototype). Licensed under the MIT License.
